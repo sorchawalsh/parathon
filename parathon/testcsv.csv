@@ -1,0 +1,30 @@
+token,ftf,cmc,start,end
+OMG,VQ,capitalisation,0,3
+ , , ,3,4
+omggggg,VS,vocal_spelling,4,11
+ , , ,11,12
+I'm, , ,12,15
+ , , ,15,16
+😃, , ,16,17
+ , , ,17,18
+SOOOOO,"['VS', 'VQ']","['vocal_spelling', 'capitalisation']",18,24
+ , , ,24,25
+tired, , ,25,30
+........., , ,30,39
+ , , ,39,40
+are, , ,40,43
+ , , ,43,44
+you, , ,44,47
+ , , ,47,48
+coming, , ,48,54
+?!?!?, , ,54,59
+ , , ,59,60
+yes, , ,60,63
+ , , ,63,64
+:), , ,64,66
+ , , ,66,67
+😃, , ,67,68
+ , , ,68,69
+OMG,VQ,capitalisation,69,72
+ , , ,72,73
+omgggggggg,VS,vocal_spelling,73,83
