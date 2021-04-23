@@ -1,3 +1,4 @@
 {
-  "(\\w)\\1{2,}": ["VQ", "Vocal spelling"]
+  "(\\w)\\1{2,}": ["VS", "vocal_spelling"],
+  "[A-Z][A-Z]+": ["VQ", "capitalisation"]
 }
