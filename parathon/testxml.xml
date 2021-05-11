@@ -1,3 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
-	<input><cue ftf="VQ" cmc="capitalisation">OMG</cue> <cue ftf="VS" cmc="vocal_spelling">omggggg</cue> I'm 😃 <cue ftf="['VS', 'VQ']" cmc="['vocal_spelling', 'capitalisation']">SOOOOO</cue> tired......... are you coming?!?!? yes :) 😃 <cue ftf="VQ" cmc="capitalisation">OMG</cue> <cue ftf="VS" cmc="vocal_spelling">omgggggggg</cue>
+	<input><cue ftf="VQ" cmc="capitalisation">OMG</cue> <cue ftf="VS" cmc="vocal_spelling">omggggg</cue> I'm <cue ftf="VK" cmc="emoji_face">😀</cue> <cue ftf="['VS', 'VQ']" cmc="['vocal_spelling', 'capitalisation']">SOOOOO</cue> tired......... <cue ftf="VK" cmc="emoji_face">😌</cue> <cue ftf="TK, VK, VS" cmc="emoji_face">🤗</cue> are you coming?!?!? yes :) <cue ftf="VK" cmc="emoji_face">😃</cue> <cue ftf="VQ" cmc="capitalisation">OMG</cue> <cue ftf="VS" cmc="vocal_spelling">omgggggggg</cue>
 </input>
