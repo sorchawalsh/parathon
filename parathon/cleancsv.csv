@@ -1,0 +1,70 @@
+ftf,cmc_main,cmc_sub,token
+VQ,vsp,cap,SCOPE
+no_ftf_equivalent,emj,emo,💖
+no_ftf_equivalent,emj,emo,💖
+no_ftf_equivalent,emj,emo,💖
+VS,voc_seg,laugh,Hi
+VK,emt,emt,:)
+VQ,pun,exclaim,!!
+VQ,vsp,cap,LMAI
+"['VQ', 'no_ftf_equivalent']","['vsp', 'pun']","['cap', 'correct']",*LMAO
+VS,acro,exclaim,omg
+VS,voc_seg,laugh,haha
+"VS, VKF",emj,emf,😂
+"VS, VKF",emj,emf,😂
+VQ,pun,exclaim,!!!
+VQ,vsp,cap,EVERYONE
+"VS, VKF",emj,emf,😂
+"VS, VKF",emj,emf,😂
+"VS, VKF",emj,emf,😂
+"VS, VKF",emj,emf,😂
+"VS, VKF",emj,emf,😂
+"VS, VKF",emj,emf,😂
+"VS, VKF",emj,emf,🤣
+VS,voc_seg,laugh,hahahaha
+VS,acro,exclaim,omg
+"['VQ', 'VS']","['vsp', 'voc_seg']","['cap', 'laugh']",AHAHAHAHA
+"VS, VKF",emj,emf,😂
+"VS, VKF",emj,emf,😂
+VS,voc_seg,laugh,haha
+VS,voc_seg,laugh,hahahahaha
+VS,vsp,let_rep,yesss
+VQ,pun,exclaim,!!!
+VS,acro,exclaim,omg
+VS,vsp,let_rep,sooo
+VS,vsp,let_rep,goood
+VS,acro,exclaim,omg
+VQ,vsp,cap,PEARLS
+"['VS', 'VQ']","['vsp', 'vsp']","['let_rep', 'cap']",HIIIIII
+"['VS', 'VS']","['vsp', 'acro']","['let_rep', 'exclaim']",Omgggg
+"['VS', 'VQ']","['vsp', 'vsp']","['let_rep', 'cap']",SOOOO
+VKF,emj,emf,😍
+VKF,emj,emf,😍
+VKF,emj,emf,😍
+VKF,emj,emf,🥰
+VKF,emj,emf,🥰
+VKF,emj,emf,🥰
+VKF,emj,emf,😍
+VQ,vsp,cap,REALLY
+VQ,vsp,cap,HOPE
+VQ,vsp,cap,YOU
+VQ,vsp,cap,ENJOY
+"['VQ', 'VS']","['vsp', 'acro']","['cap', 'exclaim']",OMG
+VS,vsp,let_rep,exciteeeeed
+VQ,pun,exclaim,!!!!
+VQ,vsp,cap,SURE
+VQ,vsp,cap,WILL
+VS,vsp,let_rep,soooo
+VS,acro,exclaim,omg
+VQ,vsp,cap,AMAZING
+"VS, VKF",emj,emf,🤯
+VS,voc_seg,laugh,haha
+VS,voc_seg,laugh,hahahahaha
+VS,acro,exclaim,omg
+VS,voc_seg,laugh,haha
+"['VS', 'VS']","['vsp', 'acro']","['let_rep', 'exclaim']",omggg
+VS,vsp,let_rep,tooo
+VS,voc_seg,laugh,haha
+VS,voc_seg,laugh,hahahahaha
+VS,acro,exclaim,omg
+VQ,pun,exclaim,!!

@@ -1,43 +1,41 @@
-import os
+import csv
 import re
-import regex
 import nltk
-import emoji
-def run(file):
-    txt=file.read()
-    print(txt)
-    RE_EMOJI = re.compile('[\U00010000-\U0010ffff]', flags=re.UNICODE)
-    split = re.findall(r"[\w']+|[.,!?;:)]+|\s+|[\U00010000-\U0010ffff]", txt, flags=re.UNICODE)
-    position=0
-    output = list()
-    xml_output=list()
-    for token in split:
-        start=position
-        position=position+len(token)
-        end=position
-        if re.search(r"(\w)\1{2,}", token):
-            type_cue="VQ"
-            cmc_cue_type="Vocal spelling"
-            token_info=(token,start,end,type_cue,cmc_cue_type)
-            token_info_xml='<cue ftf="'+type_cue+'" cmc="'+cmc_cue_type+'">'+token+'</cue>'
-            xml_output.append(token_info_xml)
-        else:
-            token_info=(token,start,end)
-            xml_output.append(token)
-        if re.match(r"[\w']+|[.,!?;:)]+|[\U00010000-\U0010ffff]", token, flags=re.UNICODE):
-            output.append(token_info)
-    print(output)
-    new_file=open("new_file.txt", "w", encoding="utf8")
-    xml_file=open("parathon_out.xml", "w", encoding="utf8")
-    output_str_xml = '<?xml version="1.0" encoding="UTF-8"?>\n\t<input>'
-    for token in xml_output:
-        output_str_xml=output_str_xml+token
-    output_str_xml=output_str_xml+"</input>"
-    xml_file.write(output_str_xml)
-    xml_file.close()
-    new_file.write(str(output))
-    new_file.close()
+from nltk.metrics.scores import (precision, recall)
 
-file=open("input_test.txt", "r", encoding="utf8")
-if __name__== "__main__":
-    run(file)
+"""out = open('cleancsv.csv', 'w', newline='', encoding='utf-8')
+writer = csv.writer(out)
+with open('testcsv.csv', 'r', encoding='utf-8') as in_file:
+    read = csv.reader(in_file)
+    for row in read:
+        if re.match(r"(\S)",row[1]):
+          writer.writerow((row[1],row[2],row[3],row[0],))
+
+with open('cleancsv.csv', encoding='utf-8') as f:
+    reader = csv.reader(f)
+    test = list(reader)
+with open('roxanechat.csv', encoding='utf-8') as f:
+    reader = csv.reader(f)
+    reference = list(reader)
+nltk.metrics.scores.accuracy(reference, test)"""
+with open("jacinto_sample_tagged.csv", encoding='utf-8') as f:
+    reader = csv.reader(f)
+    ref = list(reader)
+
+final_list = list()
+ignoremode = bool()
+for item in ref:
+    item = str(item)[2:-2]
+    for word in item.split(" "):
+        if word == "<cue":
+            ignoremode = True
+        if re.search("'</cue>", word):
+            ignoremode = False
+            print("deactivate ignore mode")
+    if ignoremode:
+        pass
+    else:
+        new_list = item.split(" ")
+        final_list.append(str(new_list)[1:-1])
+out = open('jacinto_sample_tagged.txt', 'w', encoding='utf-8')
+out.write(str(new_list))
